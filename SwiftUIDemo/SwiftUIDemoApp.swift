@@ -2,7 +2,7 @@
 //  SwiftUIDemoApp.swift
 //  SwiftUIDemo
 //
-//  Created by rehnuma.deepty on 16/8/22.
+//  Created by Rehnuma Reza on 16/8/22.
 //
 
 import SwiftUI

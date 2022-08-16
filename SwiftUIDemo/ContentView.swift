@@ -2,15 +2,39 @@
 //  ContentView.swift
 //  SwiftUIDemo
 //
-//  Created by rehnuma.deepty on 16/8/22.
+//  Created by Rehnuma Reza on 16/8/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            Text("Hello, world!")
+                .padding()
+            HStack{
+                Image(systemName: "circle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .background(Color.orange)
+                    .padding()
+                Image(systemName: "square.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .background(Color.orange)
+                    .padding()
+                Image(systemName: "triangle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .background(Color.orange)
+                    .padding()
+                
+            }
+            
+                
+        }
+        
     }
 }
 
