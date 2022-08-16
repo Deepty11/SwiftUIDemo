@@ -13,7 +13,7 @@ struct ContentView: View {
         VStack {
             Text("Hello, world!")
                 .padding()
-            HStack{
+            HStack {
                 Image(systemName: "circle.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -29,10 +29,33 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .background(Color.orange)
                     .padding()
-                
             }
             
-                
+            ZStack {
+                Image(systemName: "circle.fill")
+                    .resizable()
+                    .frame(width: 300,
+                            height: 300,
+                            alignment: Alignment.center)
+                    .aspectRatio(contentMode: .fit)
+                    .background(Color.orange)
+                    .padding()
+                Image(systemName: "square.fill")
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: Alignment.center)
+                    .aspectRatio(contentMode: .fit)
+                    .background(Color.yellow)
+                    .padding()
+                Image(systemName: "triangle.fill")
+                    .resizable()
+                    .frame(width: 100,
+                           height: 100,
+                           alignment: Alignment.center)
+                    .aspectRatio(contentMode: .fit)
+                    .background(Color.brown)
+                    .padding()
+            }
+               
         }
         
     }
